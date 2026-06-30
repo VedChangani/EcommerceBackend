@@ -44,8 +44,8 @@ public class ProductService {
         productRepo.deleteById(id);
     }
 
-    @Transactional
     public List<Product> searchProducts(String keyword) {
         return productRepo.searchProducts(keyword);
     }
+
 }
